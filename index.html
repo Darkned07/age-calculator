@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Age - Calculator - App</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main class="main">
+      <section class="clock">
+        <div class="container clock__container">
+          <!-- clock form start -->
+          <div class="clock__form">
+            <form class="form">
+              <ul class="form__ul">
+                <li class="form__li">
+                  <label class="li__label" for="">
+                    <span id="day" class="sp">DAY</span>
+                    <input
+                      id="dd"
+                      class="form__age"
+                      type="number"
+                      placeholder="DD"
+                    />
+                    <i id="i_xato1" class="xatolik hid">Must be a valid day</i>
+                  </label>
+                </li>
+                <li class="form__li">
+                  <label class="li__label" for="">
+                    <span id="month" class="sp">MONTH</span>
+                    <input
+                      id="mm"
+                      class="form__age"
+                      type="number"
+                      placeholder="MM"
+                    />
+                    <i id="i_xato2" class="xatolik hid"
+                      >Must be a valid month</i
+                    >
+                  </label>
+                </li>
+                <li class="form__li">
+                  <label class="li__label" for="">
+                    <span id="years" class="sp">YEAR</span>
+                    <input
+                      id="yyyy"
+                      class="form__age"
+                      type="number"
+                      placeholder="YYYY"
+                    />
+                    <i id="i_xato3" class="xatolik hid">Must be in the past</i>
+                  </label>
+                </li>
+              </ul>
+              <div class="btn">
+                <hr class="form__hr" />
+                <button type="submit" class="form__btn">
+                  <img class="btn__image" src="./image/button1.svg" alt="" />
+                </button>
+                <hr class="form__hr1" />
+              </div>
+            </form>
+          </div>
+          <!-- clock form end -->
+
+          <!-- form to message start -->
+          <div class="mes">
+            <ul class="mes__ul">
+              <li class="mes__li">
+                <span id="spyyyy" class="mes__li__span">- -</span>
+                <h2 class="mes__li__h2">years</h2>
+              </li>
+              <li class="mes__li">
+                <span id="spmm" class="mes__li__span">- -</span>
+                <h2 class="mes__li__h2">months</h2>
+              </li>
+              <li class="mes__li">
+                <span id="spdd" class="mes__li__span">- -</span>
+                <h2 class="mes__li__h2">days</h2>
+              </li>
+            </ul>
+          </div>
+          <!-- form to message end -->
+        </div>
+      </section>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
